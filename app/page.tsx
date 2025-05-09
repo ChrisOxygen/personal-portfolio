@@ -2,7 +2,7 @@ import ComingSoonScreen from "@/components/ComingSoonScreen";
 import Image from "next/image";
 
 export default function Home() {
-  const isComingSoon = process.env.NEXT_PUBLIC_IS_COMING_SOON === "true";
+  const isComingSoon = process.env.NEXT_PUBLIC_IS_COMING_SOON === "false";
 
   if (isComingSoon) {
     return <ComingSoonScreen />;
